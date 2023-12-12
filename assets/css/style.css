@@ -1,0 +1,215 @@
+﻿:root {
+	--colorPP: #2ba250
+}
+
+#buscador {
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	position: relative;
+	width: 315px;
+	padding: 7px 5px;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s ease;
+
+}
+
+#buscador:hover {
+	border: 1px solid var(--colorPP);
+}
+
+#search {
+	border: none;
+	padding-left: 10px;
+	height: 100%;
+}
+
+#search:focus {
+	outline: none;
+}
+
+#guardarBoton {
+	border: none;
+	position: absolute;
+	background: var(--colorPP);
+	min-width: 32px !important;
+	height: 32px !important;
+	right: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+#guardarBoton:hover{
+
+	background: darkgreen;
+
+}
+
+#guardarBoton .iconSearch {
+	color: white;
+	font-size: 14px;
+}
+
+
+
+.modal__content {
+	background: white;
+
+}
+
+.modal__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3%;
+	gap: 15px;
+}
+
+.modal__header figure {
+	display: flex;
+	justify-content: center;
+}
+
+.modal__img {
+	width: 15%;
+}
+
+.modal__body {
+	background: #f9f9fb;
+	padding: 3%;
+	list-style: none;
+}
+
+.ListaResults div {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+.ListaResults {
+	display: flex;
+	justify-content: space-between;
+
+}
+.iconLink {
+	width: 30px;
+	color: var(--colorPP);
+}
+.iconNotLink{
+	width: 80px;
+	color: var(--colorPP);
+}
+#myModal .modal-dialog {
+	pointer-events: visible;
+}
+
+.resultadosBusqueda {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+}
+
+.UrlBuscador {
+	color: black;
+	font-weight: bold;
+	transition: all 0.5 ease;
+
+}
+
+.UrlBuscador:visited {
+	color: purple !important;
+}
+
+.UrlBuscador:hover {
+	color: blue !important;
+}
+
+.modal__footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2%;
+}
+
+.btn.btn-secondary {
+	cursor: pointer;
+	background: #318204de;
+}
+.ResultsnotFound{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.msnResultsNot{
+	color: black;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#pagination{
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.modal__body .page-item.active .page-link {
+	z-index: 2;
+	color: #fff;
+	background-color: var(--colorPP) ;
+	border-color: var(--colorPP);
+}
+.modal__body .page-link{
+	color: black;
+}
+
+.Contenedorfiltros {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 29px;
+}
+.palabra__p{
+	margin-top: initial;
+  margin-bottom: initial
+}
+#palabraBuscada{
+	font-size: 15px;
+	font-weight: bold;
+}
+.filtros2{
+	display: flex;
+	flex-direction: column;
+	gap:2px;
+}
+.filtros2 span{
+	align-self: flex-end;
+}
+.ResultsnotFound img{
+	width: 36%;
+}
+.moduloPagina span{
+	font-weight: bold;
+}
+@media (max-width: 1024px){
+	.modal-dialog{
+		max-width: 100%;
+	}
+	.Contenedorfiltros {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: auto;
+		padding-bottom: 2%;
+		gap: 20px
+	}
+	.filtros2 span{
+		align-self: flex-start;
+	}
+	.ListaResults{
+		flex-direction: column;
+		padding: 0 10px;
+	}
+	.palabra__p {
+		text-align: center;
+	  }
+}

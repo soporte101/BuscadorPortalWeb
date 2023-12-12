@@ -1,0 +1,46 @@
+﻿<!--   º======| BUSCADOR |======º  -->
+		<link rel="stylesheet" href="/Scripts/Buscador/assets/css/toastify.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="/Scripts/Buscador/assets/css/style.css" type="text/css" media="all">
+		<script type="text/javascript" src="/Scripts/Buscador/assets/js/toastify.js"></script>
+		<script type="module" src="/Scripts/Buscador/assets/js/app.js"></script>
+<!--   º======| FIN BUSCADOR |======º  -->
+
+<div id="buscador">
+    <input type="text" id="search" value="" placeholder="¿Qué desea buscar?">
+    <button id="guardarBoton">
+        <i class="fa fa-search iconSearch"></i>
+    </button>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+      
+      	<figure>
+      		<img class="modal__img" src="/Scripts/Buscador/assets/img/municipio.png" />
+      	</figure>
+        <h5 class="modal__title" id="exampleModalLabel">Buscador Portal Web</h5> 
+        <div class="Contenedorfiltros">
+        <p class="palabra__p"> Resultados de la busqueda: <span id="palabraBuscada"></span> </p> 
+        <div class="filtros2">
+        	<span>Filtrar por sección</span>
+        	<select id="seccionesPortalWeb"></select>
+        </div>
+        </div>
+        
+      </div>
+      <div class="modal__body">
+        <div class="resultadosBusqueda" id="resultadosBusqueda"></div>
+        <div aria-label="Page navigation example">
+        <ul class="pagination" id="pagination"></ul>
+    </div>
+      </div>
+      <div class="modal__footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://kit.fontawesome.com/547d00b976.js"></script>
+<script type="module" src="/Scripts/Buscador/assets/js/app.js"></script>
